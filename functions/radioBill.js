@@ -5,7 +5,7 @@ function RadioBills(){
     var totalBill_RB = 0;
 
     var call_Cost = 2.75;
-    var sms_Cost = 0.65;
+    var sms_Cost = 0.75;
     
     function selectRadioBill(str){
       
@@ -18,21 +18,21 @@ function RadioBills(){
         totalBill_RB = callCount_RB + smsCount_RB;
     }
     function getCallCount_RB(){
-        return callCount_RB * call_Cost;
+        return callCount_RB;
     }
     function getSmsCount_RB(){
-        return smsCount_RB * sms_Cost;
+        return smsCount_RB;
     }
 
     function getTotalBill_RB(){
-        return totalBill_RB = smsCount_RB  + callCount_RB;
+        return totalBill_RB;
     }
 
     function totalClassName(){
-        if (getTotalCost() >= 50){
+        if (getTotalBill_RB() >= 50){
             return 'critical';
         }
-        else if (getTotalCost() >= 30){
+        else if (getTotalBill_RB() >= 30){
             return 'warning';
         }
     }

@@ -1,4 +1,4 @@
-describe("should calcatulate text bill using Factory Function", function(){
+describe("Calcatulate text bill function using Factory Function", function(){
    
     it("should be able to return ovarall total and sms total when text is sms", function(){
         let textBill = textBills();
